@@ -1,0 +1,47 @@
+<html>
+
+<head>
+  <title>visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Sorting Algorithms Visualizer</h1>
+  <div class="userinput">
+    <input type="text" id="length" placeholder="Enter length of array." min="1" max="100" size="15" value="50" />
+
+    <input type="submit" id="submit" onclick="create()" value="Generate" />
+    <input type="submit" id="stop" onclick="stop()" value="Stop" />
+    <br />
+    <br />
+
+    <input type="submit" id="bubble" onclick="sorting(1)" value="Bubble Sort" />
+    <input type="submit" id="insertion" onclick="sorting(2)" value="Insertion Sort" />
+    <input type="submit" id="selection" onclick="sorting(3)" value="Selection Sort" />
+    <input type="submit" id="quick" onclick="sorting(4)" value="Quick Sort" />
+    <br />
+
+    <span>Transition Speed</span><br />
+    <input type="range" min="1" max="5" name="Number" value="N" id="speed" onclick="set_speed()" /><br />
+  </div>
+
+  <div id="container"></div>
+
+  <footer>
+    <div class="ft">
+      <p>Created By Riddhi Prajapati</p>
+      <ul>
+        <li>
+          <a href="https://github.com/1riddhi" target="blank">Github</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/i_riddhi_kp" target="blank">Twitter</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="sort.js"></script>
+</body>
+
+</html>
